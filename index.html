@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e674bba739.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> <!-- Include Bootstrap JS -->
+    <script>
+        $(function () {
+            $('body').scrollspy({ target: '#navbar', offset: 100 });
+        });
+    </script>
+</head>
+
+<body data-spy="scroll" data-target="#navbar">
+    <div id="header">
+        <div class="container">
+            <nav id="navbar">
+                <img src="" class="logo"></img>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times"></i>
+                </ul>
+                <i class="fas fa-bars"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span>Jayesh</span></h1>
+                <p><br>Developer | Undergrad</p>
+            </div>
+        </div>
+    </div>
+
+    <!------------ABOUT------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/jayesh.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p><br>I am a highly motivated and results-driven professional with a strong commitment to achieving meaningful outcomes.
+                         My unwavering drive to excel propels me to seek a challenging position that will both test and nurture my abilities.
+                         I thrive on overcoming obstacles and believe that stepping out of my comfort zone is essential for continuous personal
+                         and professional growth. Drawing from my well-rounded skill set and valuable expertise, I am eager to apply my
+                         knowledge gained from my learning to a role that demands innovation and problem-solving.
+                         My goal is not only to succeed individually but to contribute significantly to the success and growth of a dynamic organization.
+                         I am excited about the prospect of joining a team that values adaptability, embraces change, and shares my enthusiasm
+                         for pushing boundaries and achieving remarkable results.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Web-Verse 24hrs Hackathon on Web Development</span></li>
+                            <li><span>Java &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DataXact Hackathon on Data Analysis</span></li>
+                            <li><span>C &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Cloud Burn Workshop</span></li>
+                            <li><span>C++ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GDSC WOW Workshop</span></li>
+                            <li><span>Python &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Amazon Web Services CCloud Practitioner Certified</span></li>
+                            <li><span>SQL &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Microsoft Azure Administrator Associate Certified</span></li>
+                            <li><span>Figma</span></li>
+                            <li><span>Canva</span></li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Slack App Development <br>Oct 2023- Jan 2023 <br>Amoeboids Technologies Private Limited</span><br><br>During my internship, I built a Slack app that connected with
+                                public APIs, letting users install it in their workspace. It created a
+                                channel for interaction where users could request information by
+                                posting messages. The app fetched data from APIs based on
+                                these messages, showcasing my skill in creating functional Slack
+                                integrations and using external APIs for information retrieval.</li>
+
+                            <li><span>Web Development <br>Nov 2022-Present<br>Coincent with ArIES IIT,Roorkee, Virtual</span><br><br>Successfully completed internship project developing login page for doctor's appointment app. Designed intuitive, secure
+                                interface for user access. Utilized web development skills
+                                todeliver functional, user-friendly solution.<br>
+                                Certificate of Excellence recipient for outstanding contributions
+                                as an Ecell Ambassador. Demonstratedleadership, creativity, and
+                                dedication in promotingentrepreneurship. Inspired students,
+                                organized events, and fostered an entrepreneurial mindset.</li>
+                            <li><span>Full Stack Development<br>20th June 2023 - 20th July 2023<br>Capabl from Elite Techno Groups,Virtual</span><br><br>Successfully completed a one-month Full Stack Development
+                                internship at Capabl(fom Elite Techno Groups).
+                                Build a captivating Hangman game in Python and also
+                                developed an Online Bookstore in java. Also achieved a
+                                Certificate of Completion.</li>
+                            <li><span>Other Experiences</span><br><br>Secured <strong>Azure Administrator Associate Certification</strong> 
+                                by scoring 890 out of 1000 in the exam after successfully
+                                completing the corresponding course.<br><br>
+                                Achieved <strong>AWS Certified Cloud Practitioner</strong> Certification by passing the
+                                exam after completing the respective course, scored 970 out of 1000.<br><br>
+                                Earned the <strong>Google Cloud Computing Certification</strong> from NPTEL by
+                                IIT Kharagpur, passing the exam after completing the course.
+                                Completed <strong>Python 3.4.3, C Training and Advanced C++</strong> by
+                                Spoken Tutorial , IIT Bombay. Demonstrated proficiency
+                                concepts through successful completion of the test.
+                                </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>Vellore Institute of Technology, Chennai - BTech Computer Science and Engineering</li>
+                            <li><span>2019-2021</span><br>Arihant College Bavdhan,Senior Secondary 12th</li>
+                            <li><span>2019</span><br>Podar International School Chinchwad,Secondary Education 10th</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------SERVICES------------>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-android"></i>
+                    <h2>Web Development</h2>
+                    <p>Crafting exceptional websites that merge striking design with seamless functionality.
+                       Specializing in custom solutions, responsive design, and e-commerce expertise. </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Java/Python/C/C++
+                        /SQL</h2>
+                    <p>From Java's robust solutions to Python's versatile scripting, C's efficient programming,
+                       C++'s object-oriented power, and SQL's data manipulation, I offer expertise across a spectrum of languages. </p>
+                    <a href="#">Learn more</a>
+
+                </div>
+                <div>
+
+                    <i class="fa-solid fa-crop-simple"></i>
+                    <h2>Designing</h2>
+                    <p>I am also a Design Head of Swarajya Club, a prominent organization at VIT Chennai. I
+                       am responsible for overseeing the design aspects and content creation for various events
+                      where I use Figma and Canva platform for the Designs.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------PORTFOLIO----------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Works</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png" alt="">
+                    <div class="layer">
+                        <h2>E-Commerce Web site</h2>
+                        <p>E-Commerce Web site for sports shopping</p>
+                        <a href="https://github.com/Jayeshkhadke7/E-Commerce-Website"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png" alt="">
+                    <div class="layer">
+                        <h2></h2>
+                        <p></p>
+                        <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png" alt="">
+                    <div class="layer">
+                        <h2>Chat Application</h2>
+                        <p></p>
+                        <a href="https://github.com/Jayeshkhadke7/Chat-App"><i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!------------CONTACT------------>
+    <div id="contact">
+        <div class="container">   
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> jayeshkhadke4309@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> 7719094078</p>
+                    <div class="social-icons">
+                        <a href="https://twitter.com/JayeshKhadke7?t=3uDNWHSpMKJfKqEBQ-XrFA&s=09"><i class="fab fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/jayeshk_.2003?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/jayesh-khadke-8a053a245"><i class="fab fa-linkedin"></i></a>
+                    </div> 
+                    <a href="images/Updated_Resume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"> 
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn3">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+
+        function openTab(tabName) {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove('active-link');
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add('active-link');
+            document.getElementById(tabName).classList.add('active-tab');
+        }
+
+        // JavaScript for handling the mobile navigation menu
+        document.querySelector('.fas.fa-bars').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+
+        document.querySelector('.fas.fa-times').addEventListener('click', function () {
+            document.querySelector('nav ul').classList.remove('show');
+        });
+
+    </script>
+</body>
+
+</html>
